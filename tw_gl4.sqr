@@ -141,7 +141,7 @@ B.JRNL_LN_REF
   LET $deptid 		= '="' || &B.DEPTID || '"' 
   LET $product 		= '="' || &B.PRODUCT || '"' 
   
- 
+ checking git
   
   let $str_write  = &B.FOREIGN_CURRENCY || $comma || &A.POSTED_DATE || $comma || $JRNL_LN_REF
     write 1 from  &B.LEDGER $comma &A.BUSINESS_UNIT $comma &A.JOURNAL_DATE  $comma &A.JOURNAL_ID $comma &B.JOURNAL_LINE $comma &B.BUSINESS_UNIT $comma &B.ACCOUNT $comma &C.DESCR $comma $deptid $comma $product $comma &B.PROJECT_ID $comma &B.ACTIVITY_ID $comma $line_descr $comma $descr $comma $n_journal_descr $comma &A.SOURCE $comma &A.OPRID $comma &B.RATE_DIV $comma &B.RATE_MULT $comma &B.MONETARY_AMOUNT $comma &B.CURRENCY_CD  $comma &B.FOREIGN_AMOUNT $comma $str_write $comma &D.OPEN_ITEM_KEY 
